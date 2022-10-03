@@ -23,7 +23,8 @@ s_o_l = 1 #setting the speed of light to 1
 class Particle:
     """Class describing a few elementary particles"""
 
-    def __init__(self, name, mass, charge, momentum = 0):
+    def __init__(self, name, mass,
+                charge, momentum = 0):
         """Costructor from particle's properties. Arguments:
         - name of the particle (Proton or Alpha)
         - mass (in Mev/c^2),
@@ -35,7 +36,7 @@ class Particle:
 
     def part_print(self):
          """Printing function show the property of the particle"""
-         print(f"Particle: {self.name}, mass = {self.mass} MeV/c^2 " 
+         print(f"Particle: {self.name}, mass = {self.mass} MeV/c^2 "
                f"charge = {self.charge} e, momentum = {self.momentum} MeV/c")
 
 
