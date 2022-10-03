@@ -35,7 +35,8 @@ class Particle:
 
     def part_print(self):
          """Printing function show the property of the particle"""
-         print(f"Particle: {self.name}, mass = {self.mass} MeV/c^2 charge = {self.charge} e, momentum = {self.momentum} MeV/c")
+         print(f"Particle: {self.name}, mass = {self.mass} MeV/c^2 " 
+               f"charge = {self.charge} e, momentum = {self.momentum} MeV/c")
 
 
     @property
@@ -92,22 +93,22 @@ class Particle:
 
 class Proton(Particle):
       """Class describing a Proton."""
-      p_name = 'Proton'
-      p_mass = 938.2
-      p_charge = +1
+      name = 'Proton'
+      mass = 938.2
+      charge = +1
 
       def __init__(self, momentum = 0):
-          Particle.__init__(self, self.p_name, self.p_mass, self.p_charge, momentum)
+          Particle.__init__(self, self.name, self.mass, self.charge, momentum)
 
 
 class Alpha(Particle):
       """Class describing an Alpha particle."""
-      p_name = 'Alpha'
-      p_mass = 3727.3
-      p_charge = +2
+      name = 'Alpha'
+      mass = 3727.3
+      charge = +2
 
       def __init__(self, momentum = 0):
-          Particle.__init__(self, self.p_name, self.p_mass, self.p_charge, momentum)
+          Particle.__init__(self, self.name, self.mass, self.charge, momentum)
 
 
 if __name__ == '__main__':
