@@ -99,7 +99,8 @@ class Proton(Particle):
       charge = +1
 
       def __init__(self, momentum = 0):
-          Particle.__init__(self, self.name, self.mass, self.charge, momentum)
+          Particle.__init__(self, self.name, self.mass,
+                           self.charge, momentum)
 
 
 class Alpha(Particle):
@@ -109,7 +110,8 @@ class Alpha(Particle):
       charge = +2
 
       def __init__(self, momentum = 0):
-          Particle.__init__(self, self.name, self.mass, self.charge, momentum)
+          Particle.__init__(self, self.name, self.mass,
+                           self.charge, momentum)
 
 
 if __name__ == '__main__':
