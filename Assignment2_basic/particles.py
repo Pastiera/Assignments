@@ -82,12 +82,11 @@ class Particle:
 
     @beta.setter
     def beta(self, new_value):
+        
         if (new_value < 0.) or (new_value > 1.):
             print('Beta values must be positive and <1')
             return
-        if (new_value > 1 ) and (self.mass > 0):
-            print("Massive particles can't exced the speed of light, +\
-                   while just photons may travel at c.")
+        
         self.momentum = s_o_l * new_value * \
                     self.mass / math.sqrt(1 - new_value**2)
 
